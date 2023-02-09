@@ -1,41 +1,57 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Studio89</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
 
-  <body>
+    .left-column, .right-column {
+      width: 99.9999%;
+    }
 
-    <h1>Studio89</h1>
+    .fancy {
+      font-style: italic;
+      font-weight: bold;
+    }
 
-    <p>Our songs:</p>
+      body {
+      background-color: #D3D3D3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-column">
+      <h1>Studio89</h1>
+      <p>Our songs:</p>
+      <ul>
+        <li>On Your Own</li>
+        <li>Casual Conversations for the Sake of Conversing</li>
+        <li>Jesse's Song</li>
+        <li>Party Tale</li>
+        <li>Growing Pains</li>
+        <li>Flashing Lights</li>
+      </ul>
+      <p>Our Instagram <a href="http://instagram.com/studio89band/">@studio89band.</a></p>
+      <p>
+        This is Us.
+        <br />
+        <img src="https://dailyorange.com/resize/800/wp-content/uploads/2022/05/03214917/DSCF8740.jpg" width="400" />
+      </p>
     
-    <ul>
-      <li>On Your Own</li>
-      <li>Casual Conversations for the Sake of Conversing</li>
-      <li>Jesse's Song</li>
-      <li>Party Tale</li>
-      <li>Growing Pains</li>
-      <li>Flashing Lights</li>
-      
-    </ul>
-
-    <p>Our Instagram <a href="http://instagram.com/studio89band/">@studio89band.</a></p>
-
-    <p>
-      This is Us.
-      <br />
-      <img
-        src="https://dailyorange.com/resize/800/wp-content/uploads/2022/05/03214917/DSCF8740.jpg"
-        width="400"
-      />
-    </p>
-
-    <p class="fancy">
-     Look at our brand new video
-    </p>
-  </body>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_H46qPd0fZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
+    </div>
+    <div class="right-column">
+      <p>Our Shows:</p>
+      <ul>
+        <li>2.11 The Harrington</li>
+        <li>2.18 The Lost Horizon</li>
+        <li>3.04 St. Lawrence University</li>
+      </ul>
+      <p class="fancy">Look at our brand new video</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/_H46qPd0fZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in- picture; web-share" allowfullscreen></iframe>
+    </div>
+  </div>
+</body>
 </html>
