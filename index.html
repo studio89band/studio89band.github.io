@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 <head>
    <title>Studio89</title>
   <style>
-    .container {
-      display: flex;
-      justify-content: space-between;
+    body {
+      background-color: #D3D3D3;
+      font-family: 'lato', sans-serif;
+      margin: 0;
+      padding: 20px;
+      color: #333;
     }
 
-    .left-column, .right-column {
-      width: 99.9999%;
+    .section {
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #444;
     }
 
     .fancy {
@@ -17,42 +32,64 @@
       font-weight: bold;
     }
 
-      body {
-      background-color: #D3D3D3;
+    ul {
+      list-style-type: none;
+      padding-left: 0;
     }
+
+    img, iframe {
+      max-width: 100%;
+      height: auto;
+      display: block; /* Ensure it's not inline */
+      margin: 10px 0; /* Spacing around media */
+    }
+.custom-btn {
+  padding: 5px 5px;
+  background-color: whitesmoke; /* White background */
+  color: black; /* Black text */
+  border: .5px grey; /* Black border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* No underline */
+  font-size: 18px; /* Set a font-size */
+  transition: all 0.3s; /* Smooth transition for all properties */
+}
+
+.custom-btn:hover {
+  background-color: #f8f8f8; /* Slightly grey background on hover */
+  box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.25); /* Slightly smaller shadow on hover */
+}
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="left-column">
-      <h1>Studio89</h1>
-      <p>Our songs:</p>
-      <ul>
-        <li>On Your Own</li>
-        <li>Casual Conversations for the Sake of Conversing</li>
-        <li>Jesse's Song</li>
-        <li>Party Tale</li>
-        <li>Growing Pains</li>
-        <li>Flashing Lights</li>
-      </ul>
-      <p>Our Instagram <a href="http://instagram.com/studio89band/">@studio89band.</a></p>
-      <p>
-        This is Us.
-        <br />
-        <img src="https://dailyorange.com/resize/800/wp-content/uploads/2022/05/03214917/DSCF8740.jpg" width="400" />
-      </p>
-    
-    </div>
-    <div class="right-column">
-      <p>Our Shows:</p>
-      <ul>
-        <li>2.11 The Harrington</li>
-        <li>2.18 The Lost Horizon</li>
-        <li>3.04 St. Lawrence University</li>
-      </ul>
-      <p class="fancy">Look at our brand new video</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/_H46qPd0fZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in- picture; web-share" allowfullscreen></iframe>
-    </div>
+  <div class="section">
+    <h2>Our Songs</h2>
+    <ul>
+      <li>On Your Own</li>
+      <li>Casual Conversations for the Sake of Conversing</li>
+      <li>Jesse's Song</li>
+      <li>Party Song (coming soon)</li>
+      <li>Growing Pains (coming soon)</li>
+      <li>Flashing Lights (coming soon)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Our Instagram</h2>
+    <p>Follow us on Instagram <a href="https://www.instagram.com/studio89band/" class="custom-btn" target="_blank">@studio89band</a></p>
+    <img src="https://dailyorange.com/resize/800/wp-content/uploads/2022/05/03214917/DSCF8740.jpg" alt="Band Photo" />
+  </div>
+
+  <div class="section">
+    <h2>Our Shows</h2>
+    <ul>
+      <li>Coming soon</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Our Latest Video</h2>
+    <p class="fancy">Check out our music video:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_H46qPd0fZo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 </body>
 </html>
